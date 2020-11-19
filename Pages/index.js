@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import PokemonTile from "../Components/PokemonCard";
 import ListPokemon from "../Utils/ApiPokemons";
+import { useRouter } from 'next/router'
 
 const GridWrapper = styled.div`
   display: flex;
@@ -20,10 +21,17 @@ const GridWrapper = styled.div`
               })
     }, [])
 
+    function PokemonSelected(pokemonInfo){
+      setPokemonSelected(pokemonInfo)
+      router.push('./details')
+    }
+
     return (
       <GridWrapper>
         {ListaPokemon.map((pokemon) => {
-          return <PokemonTile pokemon={pokemon} />
+          <div onClick={() => PokemonSelected(pokemonInfo)}>
+            return <PokemonTile pokemon={pokemon} />
+          </div>
         })}
         
       </GridWrapper>
