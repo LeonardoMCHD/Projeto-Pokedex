@@ -23,13 +23,14 @@ align-items: center;
 flex-wrap: wrap;
 justify-content: center;
 margin: 15px;
-top: 0;
+color: black;
 `;
 
 const Types = styled.div`
 display: flex;
 align-items: center;
 background-color: #C1BFC2;
+color: black;
 margin: 5px;
 height: 20px;
 `;
@@ -39,6 +40,7 @@ align-items: center;
 background-color: #C1BFC2;
 margin: 5px;
 height: 20px;
+color: black;
 `;
 
 const Height = styled.div`
@@ -46,7 +48,8 @@ align-items: center;
 background-color: #C1BFC2;
 margin: 5px;
 height: 20px;
-`
+color: black;
+`;
 
 export default function Teste(){
     return(
