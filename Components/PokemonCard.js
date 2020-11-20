@@ -73,7 +73,7 @@ const TileWrapper = styled.div`
                     <TileWrapper>
                     <img src={PokemonInfo.sprites ? PokemonInfo.sprites.front_default : "https://pngimg.com/uploads/pokeball/pokeball_PNG21.png"} />
                     <PokemonName>{pokemon.name ? pokemon.name : "unknown"}</PokemonName>
-                <PokemonTypes>{pokemon.id ? pokemon.id : "alo"}</PokemonTypes>
+                
                 </TileWrapper>
                 </TileHolder>
             );
